@@ -1,6 +1,17 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      {
+        "folke/lazydev.nvim",
+        ft = "lua",
+        opts = {
+          library = {
+            { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+          },
+        },
+      },
+    },
     config = function()
       require("lspconfig").lua_ls.setup {}
 
@@ -12,8 +23,7 @@ return {
             return
           end
 
-          local bufopts = { noremap = true, silent = true, buffer = bufnr }
-
+          local bufopts = { noremap = true, silent = true, buffer = args.buf }
           vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, bufopts)
 
           -- Auto-format ("lint") on save.
