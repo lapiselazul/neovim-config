@@ -12,18 +12,11 @@ vim.opt.smartindent = true
 vim.opt.breakindent = true
  
 vim.opt.incsearch = true
- 
 vim.opt.termguicolors = true
-
-vim.opt.clipboard = "unnamedplus"
-
-vim.opt.inccommand = "split"
-
 vim.opt.scrolloff = 10
-
 -- asks to save file when I try to quit with unsaved changes
 vim.opt.confirm = true
 
 vim.opt.updatetime = 450
-
-vim.opt.colorcolumn = "100"
+vim.opt.clipboard = "unnamedplus"
+vim.opt.inccommand = "split"

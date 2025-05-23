@@ -18,3 +18,4 @@ The Vim keybinds and the keyboard-first workflow is a great bonus!
 ## Dependencies
 - ripgrep (for file search)
 - fd (for file listing)
+- luarocks (required by Lazy package manager)
