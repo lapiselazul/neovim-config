@@ -13,3 +13,8 @@ why I use Arch Linux for desktop usage:
 - I get to choose what to install and what not to
 
 The Vim keybinds and the keyboard-first workflow is a great bonus!
+
+
+## Dependencies
+- ripgrep (for file search)
+- fd (for file listing)
